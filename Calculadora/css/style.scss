@@ -27,4 +27,111 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 30px rgb(187, 130, 130);
     background-color: #fff;
+
+    #display {
+        color: #0a1e23;
+        margin: 0 10px;
+        height: 120px;
+        width: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 30px;
+        margin-bottom: 20px;
+       font-weight: 600; 
+    }
+    
+    #equal {
+        height: 130px;
+    
+    }
+    
+    #clear {
+        background-color: #ffd5d8;
+        color: #fc4552;
+    }
+    
+    .btn-number {
+        background-color: #c3eaff;
+        color: #000;
+    }
+    
+    .btn-operator{
+        background-color: #ffd0fb;
+        color: #f967f3;
+    }
+    .btn-equal {
+        background-color: #adf9e7;
+        color: #000;
+    }
+    
+/* Dark theme (tema oscuro) */
+    &.dark  {
+        background-color: #1b1b1b;
+
+        #display {
+            color: #fff;
+        }
+        #clear {
+            background-color: #4c35aa;
+            color: #fff;
+        }
+        .btn-number {
+            background-color: #8efda6;
+            color: #000;
+            font-weight: 600;            
+        }
+        .btn-operator{
+            background-color: #f0d84f;
+            color: #aa00a4;
+        }
+        .btn-equal {
+            background-color: #f23b00;
+            color: #fff;
+        }
+            }
+
+
+    .theme-toggler {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: #333;
+            z-index: -1;
+        }
+    }
+    
+    .theme-toggler.active {
+        color: #333;
+        &::before {
+            background-color: #fff;
+        }
+    }
+    
+    button {
+        height: 60px;
+        width: 60px;
+        border: 0;
+        border-radius: 30%; //Recordar luego cambiar este borde-radius para que quede mejor
+        margin: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
+
+
