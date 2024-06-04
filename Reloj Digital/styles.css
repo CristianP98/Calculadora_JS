@@ -1,0 +1,26 @@
+body {
+    background-color: #323232;
+    color:#ffffff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20rem 0;
+    font-size: 9em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	transform: scale(1s);
+	animation: pulse 3.4s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
