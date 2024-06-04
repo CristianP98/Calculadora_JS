@@ -1,5 +1,5 @@
 <h1>Calculadora</h1>
 <p>Una calculadora basica con Dark Theme<p>
 
-![Static Badge](https://img.shields.io/badge/PRUEBA-939393?link=https%3A%2F%2Fproyecto-calculadora-cp.netlify.app%2F)
-![calculadora-Completapng.jpg]
+[![Static Badge](https://img.shields.io/badge/LINK-%22%20PRUEBA%20%22-blue?style=flat-square)(https://proyecto-calculadora-cp.netlify.app/)]
+![calculadoraCompletapng.jpg]
